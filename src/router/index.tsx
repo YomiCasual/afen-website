@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { AppLayout } from "../components/layouts";
 import { APP_ROUTES_VIEW } from "./routes";
 
-const CreateNFT = lazy(() => import("../pages/NFT/views/CreateNFT"));
+const CreateNFT = lazy(() => import("../pages/NFT/views/CreateSingleNFT"));
 
 const AppRouter = () => {
   return (

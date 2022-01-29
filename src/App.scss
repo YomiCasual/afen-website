@@ -1,3 +1,40 @@
 @import "tailwindcss/base";
 @import "tailwindcss/utilities";
 @import "tailwindcss/components";
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.max-width {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.max-width-full {
+  @extend .max-width;
+  max-width: 1440px;
+}
+
+input,
+select {
+  &:focus,
+  &:active {
+    border: 2px solid #ffc30b;
+    outline: none;
+  }
+}
+
+.full-width-body {
+  min-height: 80vw;
+}
+
+.left__banner {
+  background-image: url("./static/images/left-banner.jpg");
+  min-width: 25rem;
+  background-position: center;
+  background-size: cover;
+}

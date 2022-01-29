@@ -1,4 +1,3 @@
-import React from "react";
 import { Navbar, Footer } from "./components";
 
 const AppLayout = ({
@@ -7,7 +6,7 @@ const AppLayout = ({
   children?: JSX.Element | JSX.Element[];
 }) => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       {children}
       <Footer />
