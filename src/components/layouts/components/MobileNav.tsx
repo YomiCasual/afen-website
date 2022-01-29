@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import React from "react";
-import { AFEN_SVGS, CustomButton } from "../..";
+import { AFEN_SVGS } from "../../constants";
+import { CustomButton } from "../../reusables";
 import { PRIMARY_NAV_LINKS } from "../constants";
 
 const { SearchIcon, CloseIcon } = AFEN_SVGS;

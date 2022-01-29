@@ -1,8 +1,9 @@
 import clsx from "clsx";
 import { Link } from "react-router-dom";
-import { AFEN_SVGS, CustomButton } from "../..";
+import { CustomButton } from "../../reusables";
 import { APP_ROUTES } from "../../../router/constants";
 import { PRIMARY_NAV_LINKS } from "../constants";
+import { AFEN_SVGS } from "../../constants";
 
 const { AfenLogo, HalfMoon, SearchIcon, SunIcon, MenuIcon } = AFEN_SVGS;
 
