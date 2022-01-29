@@ -12,20 +12,20 @@ const Footer = () => {
   return (
     <footer className="bg-[#E8E8E8] pt-10 pb-6">
       <div className="max-width-full text-afen-ash flex flex-col gap-9 px-5">
-        <section className="flex justify-between">
-          <div className="space-y-10 max-w-[35rem] border-2">
+        <section className="flex flex-wrap gap-y-8 justify-between ">
+          <div className="space-y-10 w-[20rem] md:max-w-[35rem]">
             <h4 className="text-xl font-medium">Afen Group</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
               venenatis aliquam enim, in nisl.
             </p>
-            <div className="flex ">
+            <div className="flex">
               <input
                 type="text"
-                className="py-2 px-6 rounded-l-xl min-w-[26rem] border-2 border-transparent "
+                className="py-2 px-6 rounded-l-xl w-full lg:min-w-[15rem] border-2 border-transparent "
                 placeholder="Your email address"
               />
-              <button className="font-medium px-4 bg-afen-yellow rounded-r-xl">
+              <button className="font-medium px-4 bg-afen-yellow rounded-r-xl flex-none">
                 Sign up
               </button>
             </div>
@@ -37,7 +37,7 @@ const Footer = () => {
               focus on Decentralized Finance, Arts, Real Estate and Education.
             </p>
           </div>
-          <div className="flex gap-20">
+          <div className="flex flex-wrap gap-20">
             {FOOTER_LINKS.map(({ title, links }) => (
               <div key={title} className="flex flex-col gap-4">
                 <h3 className="font-bold">{title}</h3>
@@ -54,8 +54,8 @@ const Footer = () => {
           </div>
         </section>
         <div className="border-b border-afen-ash "></div>
-        <section className="flex items-center justify-between">
-          <div className="flex gap-8">
+        <section className="flex flex-wrap gap-y-8 items-center justify-between">
+          <div className="flex flex-wrap gap-8">
             {SECONDARY_FOOTER_LINKS.map(({ name }) => (
               <p key={name}>{name}</p>
             ))}

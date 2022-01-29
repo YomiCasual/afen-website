@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "./components";
+import { Footer } from "./components";
 
 const AppLayout = ({
   children,
@@ -7,7 +7,6 @@ const AppLayout = ({
 }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       {children}
       <Footer />
     </div>

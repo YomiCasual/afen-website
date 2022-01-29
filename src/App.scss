@@ -19,11 +19,15 @@ body {
   max-width: 1440px;
 }
 
+.font-secondary {
+  font-family: "Mulish", sans-serif;
+}
+
 input,
 select {
   &:focus,
   &:active {
-    border: 2px solid #ffc30b;
+    border-color: #ffc30b;
     outline: none;
   }
 }
@@ -37,4 +41,53 @@ select {
   min-width: 25rem;
   background-position: center;
   background-size: cover;
+}
+
+.menu-item {
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background-color: #4d55a6;
+    transition: 0.5s all ease-in-out;
+  }
+  &:hover::after {
+    width: 50%;
+  }
+}
+
+.main-banner {
+  height: 46rem;
+  background-color: #4d55a6;
+  background-image: url(./static/images/main-banner.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.mobile-nav {
+  z-index: 999999;
+  background-color: #222751;
+}
+
+.home__body {
+  background-image: url(./static/images/home-body-bg.png);
+
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.chat__box {
+  z-index: 9999;
 }

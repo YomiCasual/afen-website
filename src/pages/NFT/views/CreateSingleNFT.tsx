@@ -1,21 +1,29 @@
 import { useState } from "react";
-import { AFEN_SVGS, NFTLayout } from "../../../components";
+import { CreateSingleCollectionForm, FilePreview } from "../components";
 import { DocumentHeader } from "../../../components/reusables";
-import SingleNFT from "../components/SingleNFT";
+import { Navbar } from "../../../components";
 
-const { ArrowLeft } = AFEN_SVGS;
-
-const CreateSingleNFT = ({ title = "Home" }: { title?: string }) => {
-  const [nftType, setNftType] = useState("");
-
-  const handleChange = (e: any) => {
-    setNftType(e.target.value);
-  };
+const CreateSingleNFT = ({
+  title = "Create Single NFT",
+}: {
+  title?: string;
+}) => {
+  const [file, setFile] = useState("");
 
   return (
     <>
       <DocumentHeader title={title} />
-      <h3>Create Single NFT</h3>
+      <Navbar />
+      <article>
+        <div className="max-width py-10">
+          <div></div>
+          <h3 className="text-4xl font-bold px-4">CREATE SINGLE COLLECTION</h3>
+          <div className="flex flex-wrap gap-12">
+            <CreateSingleCollectionForm setFile={setFile} />
+            <FilePreview file={file} />
+          </div>
+        </div>
+      </article>
     </>
   );
 };
